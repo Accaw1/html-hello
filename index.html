@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An artist profile featuring background, career, and upcoming shows.">
+    <title>Artist Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "description": "A singer-songwriter profile featuring an introduction, career highlights, and show updates.",
+        "mainEntity": {
+          "@type": "Person",
+          "jobTitle": "Singer-songwriter",
+          "description": "An independent singer-songwriter creating acoustic folk and soul music."
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" id="top">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="site-nav__mark" href="#top" aria-label="Artist profile home">AP</a>
+        <ul class="site-nav__links">
+          <li><a href="#about">About me</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="#shows">Upcoming shows</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero__content">
+          <p class="eyebrow">Welcome</p>
+          <h1 id="page-title">Artist Profile</h1>
+          <p class="hero__intro">Songs shaped by quiet rooms, honest stories, and the warmth of a live audience.</p>
+          <a class="button-link" href="#about">Meet the artist</a>
+        </div>
+      </section>
+
+      <section class="profile-section profile-section--about" id="about" aria-labelledby="about-title">
+        <div class="section-content">
+          <h2 id="about-title">About me</h2>
+          <div class="body-copy">
+            <p>I am an independent singer-songwriter drawn to acoustic folk, soul, and the stories hidden in everyday life.</p>
+            <p>My music begins with a voice and a guitar, then grows through close collaboration and the energy shared with listeners in the room.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile-section profile-section--career" id="career" aria-labelledby="career-title">
+        <div class="section-content">
+          <h2 id="career-title">Career</h2>
+          <p class="section-intro">A growing collection of songs, performances, and creative milestones.</p>
+          <ol class="milestone-list">
+            <li>
+              <article>
+                <h3>First songs</h3>
+                <p>Started writing stripped-back songs and sharing them at neighborhood open-mic nights.</p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>Finding the sound</h3>
+                <p>Developed a warm live set shaped by acoustic arrangements, soulful vocals, and intimate storytelling.</p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>What comes next</h3>
+                <p>New recordings and collaborations are taking shape, with more music ready to meet an audience.</p>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="profile-section profile-section--shows" id="shows" aria-labelledby="shows-title">
+        <div class="section-content">
+          <h2 id="shows-title">Upcoming shows</h2>
+          <div class="empty-state">
+            <h3>No shows announced</h3>
+            <p>New dates are still being arranged. Check back here for the next chance to hear the songs live.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Independent singer-songwriter</p>
+      <a href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>
